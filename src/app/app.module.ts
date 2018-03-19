@@ -12,7 +12,13 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
+import { ServicesModule } from './services/services.module';
+import { ContactModule } from './contact/contact.module';
 import { LoginModule } from './login/login.module';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
+import { TaggerFormModule } from './tagger-form/tagger-form.module';
+
 
 @NgModule({
   imports: [
@@ -25,7 +31,10 @@ import { LoginModule } from './login/login.module';
     SharedModule,
     HomeModule,
     AboutModule,
+    ServicesModule,
+    ContactModule,
     LoginModule,
+    TaggerFormModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],

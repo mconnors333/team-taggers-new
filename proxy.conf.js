@@ -34,7 +34,6 @@ function setupForCorporateProxy(proxyConfig) {
     agent = new HttpsProxyAgent(proxyServer);
     proxyConfig.forEach(entry => { entry.agent = agent; });
   }
-
   return proxyConfig;
 }
 

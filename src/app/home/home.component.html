@@ -1,10 +1,39 @@
-<div class="container-fluid">
-  <div class="jumbotron text-center">
-    <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
-      <span translate>Hello world !</span>
-    </h1>
-    <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{quote}}</q>
+<div class="container-fluid" style="padding: 0;">
+  <div class="jumbotron jumbotron-fluid" style="background-image: url('./assets/teams-title-3.jpg'); background-repeat: no-repeat; background-size: cover;">
+<div class="container" style="margin-bottom: 50px;">
+    <h1 class="display-3 light">Welcome to Team Taggers!</h1>
+    <p class="lead">Team Rosters made simple.</p>
+    <hr class="my-4">
+    <p class="above-button">Create your Tagger for a great fundraiser or gameday handout!</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" routerLink="/order" role="button">Start Tagging!</a>
+    </p>
   </div>
 </div>
+<div class="container" style="margin-bottom: 50px;">
+  <h2>What People are Saying</h2>
+</div>
+<div class="container marketing center">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>"Great Fundraiser"</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>"Perfect for our league"</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>"So Easy to Order"</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    <div class="container text-center" style="margin-top:30px;">
+      <button class="btn btn-primary btn-lg center-block" (click)="openCreatTeamPage('low')">Tag Your Team Today</button>
+    </div>
+  </div>

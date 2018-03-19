@@ -17,7 +17,6 @@ export interface RandomQuoteContext {
 export class QuoteService {
 
   constructor(private http: Http) { }
-
   getRandomQuote(context: RandomQuoteContext): Observable<string> {
     return this.http.get(routes.quote(context), { cache: true })
       .pipe(

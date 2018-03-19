@@ -1,0 +1,33 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Add Your Teams</h1>
+</div>
+<form>
+  <div style="margin: 20px;">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Team Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+          </div>
+      </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Team Logo <small class="text-muted">(must be 600x800)</small></label>
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="file" accept="image/x-png,image/gif,image/jpeg">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="pull-right">
+        <button type="button" class="btn btn-primary" style="margin-right: 150px;" (click)="addTeam()">Add Team</button>
+      </div>
+    </div>
+    <div class="col-sm-12" style="margin-bottom: 120px;">
+      <h1>Summary:</h1>
+    </div>
+  </div>
+</div>
+</form>
